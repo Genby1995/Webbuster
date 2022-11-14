@@ -15,10 +15,11 @@
 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/105170642/201766467-5faec5de-8740-4127-811f-fed9217d9e32.png" height="400" />
-  <img src="https://user-images.githubusercontent.com/105170642/200370372-e47a6c48-8486-4688-9ac6-134ae78940a6.png" height="400" />
-  <img src="https://user-images.githubusercontent.com/105170642/200370381-d41fa787-de39-4c84-a298-9ba00caebd26.png" height="400" />
-  <img src="https://user-images.githubusercontent.com/105170642/200370384-a1577809-3bb3-421f-91c3-0a7d39d8a296.png" height="400" />
+  <img src="https://user-images.githubusercontent.com/105170642/201766799-a45b7de8-0951-4998-a629-9d1d69c8ba14.png" height="400" />
 </p>
-![image](https://user-images.githubusercontent.com/105170642/201766680-16de3a99-cbad-45ab-a17c-c93aa488d16f.png)
-![image](https://user-images.githubusercontent.com/105170642/201766799-a45b7de8-0951-4998-a629-9d1d69c8ba14.png)
+
+Видео с примером использования:
+https://user-images.githubusercontent.com/105170642/201775380-037161f2-122e-40ec-9301-0a723f122f63.mp4
+
+
 
