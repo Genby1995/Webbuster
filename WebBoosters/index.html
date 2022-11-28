@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/data_cards.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/popup_validation.js"></script>
+    <link rel="stylesheet" href="fonts/fonts.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+        (function (m, e, t, r, i, k, a) {
+            m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };
+            m[i].l = 1 * new Date();
+            for (var j = 0; j < document.scripts.length; j++) { if (document.scripts[j].src === r) { return; } }
+            k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+        })
+            (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+        ym(91182822, "init", {
+            clickmap: true,
+            trackLinks: true,
+            accurateTrackBounce: true
+        });
+    </script>
+    <noscript>
+        <div><img src="https://mc.yandex.ru/watch/91182822" style="position:absolute; left:-9999px;" alt="" /></div>
+    </noscript>
+    <!-- /Yandex.Metrika counter -->
+
+</head>
+
+<body>
+
+    <div class="myheader">
+        <label class="popup__label" for="email">
+            <img height="30" src="/img/icon_email.svg" alt="">
+        </label>
+        <input id="email" type="text" name="email" class="popup__input"
+            placeholder="(Для тестирования) Введите почту для отправки формы"
+            data-reg="^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(\.[a-zA-Z0-9-]+)$">
+        <div style="flex-basis: 100%; height: 0;"></div>
+        <div class="popup__hint">
+            На эту почту будет отправлена форма. 
+            Если почта не указана или указана неверно,
+            то письмо отправится на genby1995.test@mail.ru
+        </div>
+    </div>
+
+    <div class="container">
+
+        <div class="prod_card" name="p_card_proto">
+            <div class="prod_card_imgbox">
+                <img class="prod_card_img" name="p_image" value='null' src="" alt="">
+            </div>
+            <div class="price_button">
+                <div class="prod_card_price" name="p_price" value='null'></div>
+                <div class="send_button popup_link" data-link="#popup1" data-message=null>Приобрести</div>
+            </div>
+            <div class="prod_card_name" name="p_name" value='null'> Товары не прогрузились</div>
+            <div class="prod_card_dscr" name="p_dscr" value='null'></div>
+        </div>
+
+    </div>
+
+    <div id="popup1" class="popup">
+        <div class="popup__body">
+            <form name="form" class="popup__content">
+                <div class="popup__close"></div>
+                <h1 class="popup__title">ИНФОРМАЦИЯ ДЛЯ ОБРАТНОЙ СВЯЗИ</h1>
+                <div class="popup__item">
+                    <label class="popup__label" for="popupName">
+                        <img height="30" src="/img/icon_name.svg" alt="">
+                    </label>
+                    <input 
+                        id="popupName" 
+                        type="text" 
+                        name="name" 
+                        class="popup__input"
+                        placeholder="Введите имя (обязательно)" data-reg="^[А-ЯЁ][а-яё]+(-[А-ЯЁ][а-яё]+)?$">
+                    <label class="popup__hint" for="popupProd">
+                        Только имя русскими буквами. Двойное имя через "-" с большой буквы.</label>
+                </div>
+
+                <div class="popup__item">
+                    <label class="popup__label" for="popupPhone">
+                        <img height="30" src="/img/icon_phone.svg" alt="">
+                    </label>
+                    <input 
+                        id="popupPhone" 
+                        type="text" 
+                        name="phone" 
+                        class="popup__input"
+                        placeholder="Введите телефон (обязательно)" 
+                        data-reg="^((\+7|7|8)+([0-9]){10})$">
+                    <div class="popup__hint">В формате: 8xxxxxxxxxx, 7xxxxxxxxxx или +7xxxxxxxxxx</div>
+                </div>
+
+                <div class="popup__item">
+                    <label class="popup__label" for="popupProd">
+                        <img height="30" src="/img/icon_goods.svg" alt="">
+                    </label>
+                    <input 
+                        id="popupProd" 
+                        type="text" 
+                        name="prod" 
+                        class="popup__input"
+                        placeholder="Введите название товара" 
+                        data-reg="^[0-9A-Za-z_.-]+$">
+                    <div class="popup__hint"></div>
+                </div>
+
+                <div class="popup__item">
+                    <textarea 
+                        class="popup__comment" 
+                        id="popupComm" name="comm"
+                        placeholder="Ваши комментарии к заявке"></textarea>
+                    <div class="popup__hint"></div>
+                </div>
+
+                <button id="button" type="submit" class="popup__button">Отправить</button>
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>
